@@ -17,46 +17,27 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-    <div class="row">
-        <div id="tiempo" class="col-md-12">
-            <img id="time_bg" src="img/time.png" width="100" height="65">
-            <span id="time">Time</span>
-            <span id="timer">30</span>
-        </div>
-    </div>
-    <div class="row">
-        <div id="button" class="col-md-12">
-            <img id="boton" src="img/button1.png" width="200" height="210">
-        </div>
-    </div>
-    <div class="row">
-        <div id="marcador" class="col-md-12">
-              <img id="score_bg" src="img/score.png" width="150" height="100">
-              <span id="score">Score</span>
-              <span id="number">0</span>
-        </div>
-    </div>
-    </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h1 id="number2">Puntaje</h1>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <div id="tiempo" class="col-auto text-center p-2">
+        <div id="time-row" class="d-flex flex-column justify-content-center">
+          <span id="time">Time</span>
+          <span id="timer">30</span>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button id="boton_re" type="button" class="btn btn-primary">Restart</button>
+      <div id="button" class="col-auto">
+        <img id="boton" src="img/button1.png" width="200" height="210">
+      </div>
+      <div id="marcador" class="col-auto text-center p-2">
+        <div id="score-row" class="d-flex flex-column justify-content-center">
+          <span id="score">Score</span>
+          <span id="number">0</span>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/functions.js"></script>
-    <script src="http://debug.build.phonegap.com/target/target-script-min.js#anonymous"></script>
   </body>
 </html>
